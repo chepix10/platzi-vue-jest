@@ -15,18 +15,25 @@
     "vue": "^2.6.10"
   },
   "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-decorators": "^7.4.4",
+    "@babel/plugin-proposal-export-namespace-from": "^7.5.2",
+    "@babel/plugin-proposal-function-sent": "^7.5.0",
+    "@babel/plugin-proposal-numeric-separator": "^7.2.0",
+    "@babel/plugin-proposal-throw-expressions": "^7.2.0",
+    "@babel/plugin-syntax-jsx": "^7.2.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.5.0",
+    "@babel/plugin-transform-runtime": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/runtime": "^7.5.5",
+    "@vue/babel-helper-vue-jsx-merge-props": "^1.0.0",
+    "@vue/babel-plugin-transform-vue-jsx": "^1.0.0",
+    "@vue/test-utils": "^1.0.0-beta.29",
     "autoprefixer": "^9.6.1",
     "babel-core": "^6.26.3",
-    "babel-helper-vue-jsx-merge-props": "^2.0.3",
     "babel-jest": "^24.8.0",
     "babel-loader": "^8.0.6",
     "babel-plugin-dynamic-import-node": "^2.3.0",
-    "babel-plugin-syntax-jsx": "^6.18.0",
-    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-plugin-transform-vue-jsx": "^3.7.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-stage-2": "^6.24.1",
     "chalk": "^2.0.1",
     "copy-webpack-plugin": "^5.0.4",
     "css-loader": "^3.2.0",
@@ -36,6 +43,7 @@
     "html-webpack-plugin": "^3.2.0",
     "jest": "^24.8.0",
     "jest-serializer-vue": "^2.0.2",
+    "mini-css-extract-plugin": "^0.8.0",
     "node-notifier": "^5.1.2",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "ora": "^1.2.0",
@@ -71,6 +79,11 @@
   "standard": {
     "env": {
       "jest": true
+    }
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.vue$": "vue-jest"
     }
   }
 }
